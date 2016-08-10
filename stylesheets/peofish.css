@@ -1,0 +1,13 @@
+ul > li {
+    list-style-type:none;
+}
+ul > li > a {
+    color: #6d6d6d;
+}
+ul > li > a:hover {
+    color: #d6d6d6;
+}
+
+ul > li {
+    margin: 6px 0px 6px 0px;
+}
