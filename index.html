@@ -9,6 +9,11 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <link rel="stylesheet" type="text/css" href="stylesheets/peofish.css" rel="stylesheet">
+    <style>
+    #menu li li {
+        display: none;
+    }
+    </style>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -19,16 +24,16 @@
 			//$('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
 			$('.tree li:has(ul)').addClass('parent_li');
 			$('.tree li.parent_li > span').on('click', function (e) {
-					var children = $(this).parent('li.parent_li').find(' > ul > li');
-					if (children.is(":visible")) {
-					children.hide('fast');
-					//$(this).attr('title', 'Expand this branch').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
-					} else {
-					children.show('fast');
-					//$(this).attr('title', 'Collapse this branch').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
-					}
-					e.stopPropagation();
-					});
+				var children = $(this).parent('li.parent_li').find(' > ul > li');
+				if (children.is(":visible")) {
+				    children.hide('fast');
+				//$(this).attr('title', 'Expand this branch').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+				} else {
+				children.show('fast');
+				//$(this).attr('title', 'Collapse this branch').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+				}
+				e.stopPropagation();
+				});
 			});
 </script>
 	
@@ -64,9 +69,7 @@
 	<ul>
 	    <li><span>PHP</span><a href=""></a>
 			<ul>
-		    	<li><a href="#">start php</a></li>
-		   	 	<li><a href="#">what php</a></li>
-		   		<li><a href="#">learn php</a></li>
+		    	<li><a href="#">php</a></li>
 			</ul>
 	    </li>
 	    <li><span>C/C++</span>
